@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* K-12 School Design System
+   Primary: Deep Royal Blue - Trust, education, professionalism
+   Accent Gold: Excellence, achievement  
+   Accent Teal: Growth, innovation
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 37% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 37% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 37% 15%;
+
+    /* Deep Royal Blue */
+    --primary: 213 53% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft gray backgrounds */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 213 53% 24%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 213 15% 45%;
+
+    /* Soft Teal accent */
+    --accent: 170 54% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Warm Gold */
+    --gold: 41 62% 58%;
+    --gold-foreground: 213 37% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 213 53% 24%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 213 37% 15%;
+    --sidebar-primary: 213 53% 24%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 213 37% 15%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 213 53% 24%;
+  }
+
+  .dark {
+    --background: 213 37% 8%;
+    --foreground: 210 20% 96%;
+
+    --card: 213 37% 12%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 213 37% 12%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 210 40% 70%;
+    --primary-foreground: 213 37% 8%;
+
+    --secondary: 213 30% 18%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 213 30% 18%;
+    --muted-foreground: 210 15% 60%;
+
+    --accent: 170 54% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --gold: 41 62% 58%;
+    --gold-foreground: 213 37% 8%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 210 20% 96%;
+
+    --border: 213 30% 20%;
+    --input: 213 30% 20%;
+    --ring: 210 40% 70%;
+
+    --sidebar-background: 213 37% 10%;
+    --sidebar-foreground: 210 20% 96%;
+    --sidebar-primary: 210 40% 70%;
+    --sidebar-primary-foreground: 213 37% 8%;
+    --sidebar-accent: 213 30% 18%;
+    --sidebar-accent-foreground: 210 20% 96%;
+    --sidebar-border: 213 30% 20%;
+    --sidebar-ring: 210 40% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
